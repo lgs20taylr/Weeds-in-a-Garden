@@ -1,5 +1,3 @@
-from collections import Counter as Counter
-
 def main():
     quadrat = initQuad(5,5)
     quadrat = fillQuad(quadrat)
@@ -19,7 +17,7 @@ def initQuad(x,y):
 def fillQuad(quadrat):
     for i in quadrat:
         for j in quadrat[i]:
-            quadrat[i][j] = int(input(f"Please enter the number of weeds occuring at {j},{i}"))
+            quadrat[i][j] = int(input(f"Please enter the number of weeds occuring at ({j},{i})."))
     return quadrat
 
 def printQuad(quadrat):
